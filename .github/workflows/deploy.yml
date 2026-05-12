@@ -25,7 +25,7 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t iniyaa11/aws-cicd2:${{ github.sha }} .
-          docker tag iniyaa11/aws-cicd2:${{ github.sha }} atomcodex/aws-cicd:latest
+          docker tag iniyaa11/aws-cicd2:${{ github.sha }} iniyaa11/aws-cicd2:latest
 
       - name: Push Docker Images
         run: |
